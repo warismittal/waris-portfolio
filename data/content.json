@@ -1,0 +1,557 @@
+{
+ "meta": {
+  "name": "waris_portfolio",
+  "note": "Fields marked verify:true still need Waris to confirm before publishing."
+ },
+ "profile": {
+  "name": "Waris",
+  "headline": "Computer Science student at Thapar Institute of Engineering and Technology (TIET), graduating 2028. Freelance portrait artist since 2018.",
+  "location": "Patiala, Punjab, India",
+  "email": "warismittal40@gmail.com",
+  "github": "https://github.com/warismittal",
+  "linkedin": "https://linkedin.com/in/waris-mittal",
+  "vision": "I want to build technology that millions of people and businesses rely on every day, at a company where the bar is high and ownership is earned. I learn fast, take products from idea to working system on my own, and deliver under pressure."
+ },
+ "education": [
+  {
+   "institution": "Thapar Institute of Engineering and Technology, Patiala",
+   "degree": "B.E. Computer Science and Engineering",
+   "period": "Aug 2024 to May 2028",
+   "detail": "CGPA 9.11/10 (up to Sem 4). Merit-3 Scholarship Holder.",
+   "verify": false
+  },
+  {
+   "institution": "Star Plus Convent School",
+   "degree": "CBSE Class XII (PCM)",
+   "period": "2023",
+   "detail": "91.40%. CBSE Class X (2021): 94.80%.",
+   "verify": false
+  }
+ ],
+ "skills": {
+  "Languages": [
+   "Java",
+   "Python",
+   "C++",
+   "JavaScript",
+   "TypeScript",
+   "SQL"
+  ],
+  "Backend": [
+   "Spring Boot",
+   "Spring Security (JWT)",
+   "JPA/Hibernate",
+   "FastAPI",
+   "Node.js",
+   "REST APIs",
+   "WebSockets",
+   "Kafka",
+   "Microservices"
+  ],
+  "Frontend": [
+   "React",
+   "Next.js",
+   "Three.js",
+   "Tailwind CSS",
+   "GSAP",
+   "HTML5",
+   "CSS3"
+  ],
+  "ML, Data and CV": [
+   "PyTorch",
+   "TensorFlow",
+   "Scikit-learn",
+   "XGBoost",
+   "Pandas",
+   "NumPy",
+   "OpenCV",
+   "YOLOv8",
+   "nerfstudio",
+   "ARIMA, GARCH, LSTM",
+   "LLM APIs"
+  ],
+  "Data and DevOps": [
+   "PostgreSQL",
+   "PostGIS",
+   "MongoDB",
+   "Redis",
+   "Docker",
+   "GitHub Actions",
+   "Git",
+   "Vercel",
+   "Railway"
+  ]
+ },
+ "projects": [
+  {
+   "slug": "varwix",
+   "title": "VARWIX",
+   "subtitle": "Financial data science and quantitative risk platform",
+   "summary": "A three-tier risk and ML platform for quantitative analysis, with a Monte Carlo risk engine and forecasting models.",
+   "stack": [
+    "React",
+    "Spring Boot",
+    "FastAPI",
+    "PostgreSQL",
+    "Redis",
+    "Docker"
+   ],
+   "highlights": [
+    "3-tier platform: React dashboard, Spring Boot gateway with JWT auth, Python analytics microservice.",
+    "Serves 15+ quant and ML models to 200+ beta users at 99.5% uptime.",
+    "Risk engine for historical and parametric VaR and CVaR, with a 10,000-path Monte Carlo GBM.",
+    "Optimised portfolios backtested 18% higher Sharpe ratio than equal-weight.",
+    "Forecasting (ARIMA, GARCH, LSTM) and an XGBoost and Random Forest ensemble: 35% lower MAPE than a naive baseline.",
+    "Cut p95 analytics latency 82% (1.8 s to 320 ms) with Redis caching and indexed PostgreSQL tables."
+   ],
+   "status": "Verify: beta or live",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  },
+  {
+   "slug": "ideociety",
+   "title": "Ideociety",
+   "subtitle": "AI-powered smart residential society platform",
+   "summary": "Role-based society management with a 3D society map, live CCTV coverage and computer-vision gate automation.",
+   "stack": [
+    "Spring Boot",
+    "React",
+    "Three.js",
+    "OpenCV",
+    "YOLOv8",
+    "PostgreSQL"
+   ],
+   "highlights": [
+    "Role-based society management across 8 Spring Boot modules: visitor passes, billing, complaints, amenity booking.",
+    "Piloted with 120+ households; cut complaint resolution time by 40%.",
+    "Interactive 3D society map (React and Three.js) showing 24 live CCTV camera pointers, alerts and coverage.",
+    "Guard response time cut 35%.",
+    "YOLOv8 and OCR number-plate recognition at 96% accuracy and 15 FPS per stream, automating 500+ daily gate entries."
+   ],
+   "status": "Verify: pilot status",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  },
+  {
+   "slug": "grabito",
+   "title": "Grabito",
+   "subtitle": "Intelligent food delivery platform",
+   "summary": "Real-time order tracking, rider assignment simulation and AI features for a food delivery product.",
+   "stack": [
+    "Next.js",
+    "Spring Boot",
+    "Kafka",
+    "Redis",
+    "PostGIS",
+    "WebSockets",
+    "LLM APIs"
+   ],
+   "highlights": [
+    "Real-time order tracking over WebSockets with sub-200 ms location updates.",
+    "Kafka pipeline handling 5,000 events/s across 1,000+ concurrent simulated orders.",
+    "Rider assignment and order-batching simulator (Hungarian matching, geospatial clustering) cut rider idle distance by 22%.",
+    "Address intelligence for the last 50 metres cut failed deliveries by 30%.",
+    "AI features: conversational cart builder, rider voice assistant, menu digitisation (OCR and LLM), coupon-fraud detection flagging 92% of test fraud cases."
+   ],
+   "status": "Verify: which features are built and which are planned",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  },
+  {
+   "slug": "nerf-vision",
+   "title": "NeRF Vision",
+   "subtitle": "Sparse-view NeRF and camouflaged object detection",
+   "summary": "Reproduction of FreeNeRF in nerfstudio for sparse views, plus a camouflaged-object detection pipeline.",
+   "stack": [
+    "Python",
+    "PyTorch",
+    "nerfstudio",
+    "OpenCV"
+   ],
+   "highlights": [
+    "Reproduced FreeNeRF in nerfstudio for reconstruction from 3 to 8 views; gained 2.1 dB PSNR over vanilla NeRF at 3 views, with higher SSIM.",
+    "Camouflaged-object detection reaching F1 0.84 and IoU 0.78, with ablations across view counts and occlusion levels.",
+    "UCS532 Computer Vision project, built with Tanishq and supervised by Dr. Shailendra Tiwari."
+   ],
+   "status": "Verify: detection scope",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  },
+  {
+   "slug": "customer-churn",
+   "title": "Customer Churn",
+   "subtitle": "Predictive analytics and retention",
+   "summary": "Churn and credit-risk models. Waiting for Waris to confirm whether this is a separate project or part of VARWIX.",
+   "stack": [
+    "XGBoost",
+    "Random Forest",
+    "Pandas"
+   ],
+   "highlights": [
+    "Churn and credit-risk models reaching ROC-AUC 0.91, built within the VARWIX forecasting work."
+   ],
+   "status": "Decide: own page or part of VARWIX",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  },
+  {
+   "slug": "signal-sql",
+   "title": "Startup Investment Analysis",
+   "subtitle": "DBMS project on a normalised MySQL schema",
+   "summary": "A decision-support database built on Indian startup ecosystem data.",
+   "stack": [
+    "MySQL",
+    "SQL",
+    "Frontend"
+   ],
+   "highlights": [
+    "Normalised MySQL backend using Indian startup ecosystem data.",
+    "Dark glassmorphism frontend for investment analysis."
+   ],
+   "status": "Verify details",
+   "verify": true,
+   "repo": "",
+   "demo": ""
+  }
+ ],
+ "leadership": {
+  "stages": [
+   {
+    "key": "core",
+    "title": "Core Member",
+    "when": "Date to confirm",
+    "lines": [
+     "Joined the TEDxTIET core team: on-ground operations, set-up and speaker-day support."
+    ],
+    "state": "done",
+    "verify": true
+   },
+   {
+    "key": "ec",
+    "title": "Executive Committee Lead, Creativity and Logistics",
+    "when": "2024 to present",
+    "lines": [
+     "Led logistics and creative operations for a TEDx event with 500+ attendees.",
+     "Coordinated 25+ vendors across procurement, stage, print and security.",
+     "Ran on-ground hospitality for keynote speakers Nikhil Kamath and Piyush Goyal.",
+     "Tracked 40+ tasks across teams."
+    ],
+    "state": "current",
+    "verify": false
+   },
+   {
+    "key": "eb",
+    "title": "Executive Board (EB)",
+    "when": "Title and dates to confirm",
+    "lines": [
+     "The next stage on the team. Title and scope will be added once confirmed."
+    ],
+    "state": "next",
+    "verify": true
+   }
+  ],
+  "other": [
+   {
+    "title": "EduExpose: Global Campus Ambassador",
+    "when": "2024 to present",
+    "lines": [
+     "Drove campus outreach and roadmap seminars reaching 300+ students."
+    ]
+   },
+   {
+    "title": "Class Representative, CSE Batch 2024-28, and Vice Proctor, Hostel J (TIET)",
+    "when": "2024 to present",
+    "lines": [
+     "Represents 150+ students on academics and grievances. Co-manages welfare for 900+ hostel residents."
+    ]
+   },
+   {
+    "title": "Raised Rs. 50,000 for Rotaract and Pratigya Society",
+    "when": "Social impact",
+    "lines": [
+     "Fundraising for community causes."
+    ]
+   }
+  ]
+ },
+ "achievements": [
+  {
+   "title": "Runner-up, Code for Good (JPMorgan Chase)",
+   "group": "Hackathons"
+  },
+  {
+   "title": "Runner-up, HackThu (Microsoft-ACM)",
+   "group": "Hackathons"
+  },
+  {
+   "title": "Winner, InnovateX (TEDx)",
+   "group": "Hackathons"
+  },
+  {
+   "title": "700+ DSA problems on LeetCode, Codeforces and CodeChef; 500+ SQL problems; 365-day LeetCode streak",
+   "group": "Problem solving"
+  },
+  {
+   "title": "Best Delegate, PEC Chandigarh MUN (USA delegation). Also Thapar MUN, Joseph Lotus MUN, High Command MUN",
+   "group": "Model United Nations"
+  },
+  {
+   "title": "National winner in Mathematics, Physics and Chemistry Olympiads",
+   "group": "Olympiads",
+   "verify": true
+  },
+  {
+   "title": "NCC 'A' Certificate",
+   "group": "Service"
+  },
+  {
+   "title": "Agile with Jira (Atlassian)",
+   "group": "Certifications"
+  },
+  {
+   "title": "Computer Vision and Image Processing (IBM)",
+   "group": "Certifications"
+  },
+  {
+   "title": "Network Security (Google)",
+   "group": "Certifications"
+  },
+  {
+   "title": "Generative AI for Data Analytics (Microsoft)",
+   "group": "Certifications"
+  },
+  {
+   "title": "Data Analytics (Google)",
+   "group": "Certifications"
+  },
+  {
+   "title": "Web development course (Udemy)",
+   "group": "Certifications"
+  }
+ ],
+ "checklist": {
+  "done": [
+   {
+    "title": "LeetCode",
+    "detail": "700+ DSA problems. The desk notebook shows 450/450; confirm which count to publish.",
+    "date": "Verify date",
+    "verify": true
+   },
+   {
+    "title": "GitHub",
+    "detail": "Active. github.com/warismittal",
+    "date": "Ongoing"
+   },
+   {
+    "title": "Projects",
+    "detail": "5 projects shipped: VARWIX, Ideociety, Grabito, NeRF Vision, Customer Churn",
+    "date": "Verify date",
+    "verify": true
+   }
+  ],
+  "pending": [
+   {
+    "title": "Internship",
+    "detail": "Next milestone"
+   },
+   {
+    "title": "Placement",
+    "detail": "Next milestone"
+   }
+  ]
+ },
+ "art": [
+  {
+   "slug": "bird-of-paradise",
+   "title": "Bird of Paradise",
+   "medium": "Colour pencil",
+   "year": "2023",
+   "note": "Signed 28/05/23. Layered feather strokes in pink and blue over warm roses.",
+   "img": "assets/art/bird-of-paradise.jpg"
+  },
+  {
+   "slug": "four-friends",
+   "title": "Four Friends",
+   "medium": "Graphite and charcoal",
+   "year": "",
+   "note": "A group portrait from a photograph, built up in soft graphite tones.",
+   "img": "assets/art/four-friends.jpg"
+  },
+  {
+   "slug": "the-eye",
+   "title": "The Eye",
+   "medium": "Graphite",
+   "year": "",
+   "note": "A single eye study: lashes, wet-line highlight and skin texture.",
+   "img": "assets/art/the-eye.jpg"
+  },
+  {
+   "slug": "heartland",
+   "title": "Heartland",
+   "medium": "Ink with colour pencil",
+   "year": "",
+   "note": "An anatomical heart in zentangle patterns, with a sunset landscape inside.",
+   "img": "assets/art/heartland.jpg"
+  },
+  {
+   "slug": "canal-at-dusk",
+   "title": "Canal at Dusk",
+   "medium": "Ballpoint ink",
+   "year": "",
+   "note": "A couple at the railing of a canal bridge, drawn entirely in hatching.",
+   "img": "assets/art/canal-at-dusk.jpg"
+  },
+  {
+   "slug": "the-galleon",
+   "title": "The Galleon",
+   "medium": "Ink",
+   "year": "",
+   "note": "A tall ship under full rigging, every line drawn freehand.",
+   "img": "assets/art/the-galleon.jpg"
+  },
+  {
+   "slug": "winged-warrior",
+   "title": "Winged Warrior",
+   "medium": "Ballpoint ink",
+   "year": "",
+   "note": "A hooded figure with feathered wings, mid-landing.",
+   "img": "assets/art/winged-warrior.jpg"
+  },
+  {
+   "slug": "king-kohli",
+   "title": "Virat Kohli",
+   "medium": "Colour pencil",
+   "year": "",
+   "note": "A tribute portrait of the cricketer in the India kit.",
+   "img": "assets/art/king-kohli.jpg"
+  },
+  {
+   "slug": "together",
+   "title": "Together",
+   "medium": "Graphite",
+   "year": "",
+   "note": "A commissioned-style couple portrait, signed 30/08.",
+   "img": "assets/art/together.jpg"
+  },
+  {
+   "slug": "tiger-cub",
+   "title": "Tiger Cub",
+   "medium": "Colour pencil and marker",
+   "year": "",
+   "note": "A playful tiger cub with a football, in bright orange.",
+   "img": "assets/art/tiger-cub.jpg"
+  }
+ ],
+ "societies": [
+  {
+   "name": "Saturnalia",
+   "kind": "Tech society",
+   "line": "Tech society card on the desk."
+  },
+  {
+   "name": "FAPS",
+   "kind": "Fine Arts and Photography Society",
+   "line": "Arts society card on the desk."
+  }
+ ],
+ "contact": {
+  "availability": "Open to internships, freelance portraits and collaboration on engineering projects.",
+  "endpoint": "/api/v1/contact"
+ },
+ "art_meta": {
+  "verify": true,
+  "note": "Titles and years are working titles. Waris to confirm."
+ },
+ "quotes": [
+  {
+   "text": "I think if I did not have belief, I would not be able to build my career all these years.",
+   "who": "Virat Kohli",
+   "source": "The Cricket Monthly, \"This is Virat\", June 2015",
+   "url": "https://www.thecricketmonthly.com/story/877745/this-is-virat"
+  },
+  {
+   "text": "I am going to eat right. I am going to train right.",
+   "who": "Virat Kohli",
+   "source": "The Cricket Monthly, \"This is Virat\", June 2015",
+   "url": "https://www.thecricketmonthly.com/story/877745/this-is-virat"
+  },
+  {
+   "text": "Every setback becomes an opportunity for me to come back stronger.",
+   "who": "Virat Kohli",
+   "source": "Reported by Sportskeeda, 2023",
+   "url": "https://www.sportskeeda.com/cricket/i-draw-inspiration-past-successes-virat-kohli-ahead-2023-asia-cup"
+  }
+ ],
+ "photos": [
+  {
+   "img": "assets/photos/friends-night.jpg",
+   "caption": "The ones who stay up with you"
+  },
+  {
+   "img": "assets/photos/tedx-team-props.jpg",
+   "caption": "TEDxTIET, letters we built by hand"
+  },
+  {
+   "img": "assets/photos/tedx-team-lanyards.jpg",
+   "caption": "Team TEDxTIET"
+  },
+  {
+   "img": "assets/photos/tedx-creativity.jpg",
+   "caption": "#Creativity at TEDxTIET"
+  }
+ ],
+ "groundwork": {
+  "service": [
+   {
+    "title": "NCC",
+    "line": "'A' Certificate. Drill, discipline and early mornings before anyone called them a routine."
+   },
+   {
+    "title": "Model United Nations",
+    "line": "Best Delegate at PEC Chandigarh MUN (USA delegation). Also Thapar MUN, Joseph Lotus MUN and High Command MUN."
+   },
+   {
+    "title": "Debate and public speaking",
+    "line": "Arguing a brief under time pressure, the same muscle MUN trains. Event list to be added.",
+    "verify": true
+   }
+  ]
+ },
+ "expo": {
+  "varwix": {
+   "demo": "varwix",
+   "booth": "Main hall",
+   "tag": "Flagship"
+  },
+  "ideociety": {
+   "demo": "ideociety",
+   "booth": "Hall B",
+   "tag": "Smart city"
+  },
+  "grabito": {
+   "demo": "grabito",
+   "booth": "Hall B",
+   "tag": "Real time"
+  },
+  "nerf-vision": {
+   "demo": "nerf",
+   "booth": "Research row",
+   "tag": "Computer vision"
+  },
+  "customer-churn": {
+   "demo": "churn",
+   "booth": "Research row",
+   "tag": "Predictive ML"
+  },
+  "signal-sql": {
+   "demo": "sql",
+   "booth": "Data corner",
+   "tag": "Databases"
+  }
+ }
+}

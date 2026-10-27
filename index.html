@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Waris | Built in the Quiet Hours</title>
+  <meta name="description" content="Waris: Computer Science at Thapar (TIET), Executive Committee Lead at TEDxTIET, builder of VARWIX, and a portrait artist since 2018. An interactive portfolio set at a desk between midnight and sunrise.">
+  <meta name="theme-color" content="#0b0912">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="preload" href="assets/fonts/interdisplay-900.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/lora-italic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/desk/sketch.jpg" as="image">
+  <link rel="preload" href="assets/desk/f1.jpg" as="image">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/desk.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/stage.css">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar" id="topbar">
+    <a class="wordmark" href="#/" aria-label="Waris, back to the desk"><span class="wm-w">W</span><span class="wm-rest">aris</span></a>
+    <nav class="nav" id="nav" aria-label="Chapters">
+      <a href="#/masterclass">Masterclass</a>
+      <a href="#/groundwork">Groundwork</a>
+      <a href="#/stage">TEDx Stage</a>
+      <a href="#/expo">Tech Expo</a>
+      <a href="#/gallery">Gallery</a>
+      <a href="#/os">Shell</a>
+      <a href="#/contact">Contact</a>
+    </nav>
+    <div class="topbar-tools">
+      <button class="sound-btn" id="soundBtn" type="button" aria-pressed="false" aria-label="Turn sound on">
+        <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">Sound off</span>
+      </button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"><div id="app" class="app"></div></main>
+
+  <div class="film" id="film" aria-hidden="true">
+    <div class="veil"></div><div class="leak"></div>
+    <div class="slate"><span class="slate-kicker" id="slateKicker"></span><span class="slate-title" id="slateTitle"></span></div>
+  </div>
+  <div class="grain-layer" aria-hidden="true"></div>
+  <div class="cursor-tip" id="cursorTip" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p class="noscript">This portfolio is interactive and needs JavaScript. The resume is at <a href="assets/resume.pdf">assets/resume.pdf</a>, and Waris is at warismittal40@gmail.com.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
